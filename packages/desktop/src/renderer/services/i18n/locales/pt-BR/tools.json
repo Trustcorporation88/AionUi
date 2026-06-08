@@ -1,0 +1,69 @@
+{
+  "unknownFile": "Arquivo desconhecido",
+  "newFile": "Novo Arquivo",
+  "deletedFile": "Arquivo Excluído",
+  "modified": "Modificado",
+  "fileChanges": "Alterações",
+  "shell": {
+    "displayName": "Comando Shell",
+    "description": "Executar comandos shell"
+  },
+  "fileOps": {
+    "displayName": "Operações de Arquivo",
+    "description": "Leitura, escrita e modificação de arquivos"
+  },
+  "webSearch": {
+    "displayName": "Busca na Web",
+    "description": "Pesquisar conteúdo na web"
+  },
+  "mcp": {
+    "generic": {
+      "displayName": "Ferramenta MCP: {{toolName}}",
+      "description": "Chamada de ferramenta MCP: {{toolName}}"
+    }
+  },
+  "unknown": {
+    "displayName": "Ferramenta Desconhecida",
+    "description": "Tipo de ferramenta desconhecido"
+  },
+  "status": {
+    "pending": "Pendente",
+    "executing": "Executando",
+    "success": "Sucesso",
+    "error": "Erro",
+    "canceled": "Cancelado"
+  },
+  "titles": {
+    "web_search_started": "Busca na Web Iniciada",
+    "web_search_completed": "Busca na Web Concluída",
+    "web_search": "Busca Web",
+    "applying_patch": "Aplicando Patch",
+    "patch_applied": "Patch Aplicado",
+    "file_patch": "Patch de Arquivo",
+    "mcp_tool_starting": "Ferramenta MCP: {{toolName}} (iniciando)",
+    "mcp_tool": "MCP: {{toolName}}",
+    "execute_command": "Executar: {{command}}",
+    "command_output": "Saída do Comando",
+    "command_completed": "Comando Concluído",
+    "shell_command": "Comando Shell"
+  },
+  "labels": {
+    "search_query": "Busca:",
+    "file_changes": "Alterações:",
+    "tool_details": "Detalhes:",
+    "tool": "Ferramenta",
+    "arguments": "Argumentos:",
+    "result": "Resultado:",
+    "command": "Comando:",
+    "working_directory": "Diretório:",
+    "exit_code": "Saída: {{code}}",
+    "duration": "Duração: {{seconds}}",
+    "auto_approved": "Auto-aprovado",
+    "manual_approval": "Aprovação manual"
+  },
+  "actions": {
+    "create": "criar",
+    "modify": "modificar",
+    "delete": "excluir"
+  }
+}
