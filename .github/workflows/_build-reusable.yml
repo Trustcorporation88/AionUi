@@ -26,6 +26,9 @@ on:
 
 env:
   BUN_INSTALL_REGISTRY: 'https://registry.npmjs.org/'
+  # Run JavaScript actions on Node.js 24 (GitHub forces this default from 2026-06-16;
+  # opting in early silences the Node.js 20 deprecation warnings).
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
   AIONUI_HUB_TAG: 'dist-ebc6a2b'
 
 jobs:
