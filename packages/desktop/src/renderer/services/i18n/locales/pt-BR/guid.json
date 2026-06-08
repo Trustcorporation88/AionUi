@@ -57,6 +57,105 @@
         "title": "Grátis e open-source",
         "desc": "Multiplataforma e transparente — você no controle."
       }
+    },
+    "infographic": {
+      "sectionEngines": "Motores de Agentes de IA",
+      "sectionAssistants": "Assistentes Profissionais",
+      "sectionTools": "Ferramentas do Agente",
+      "clickHint": "Clique em qualquer card para ver detalhes",
+      "what": "O que faz",
+      "how": "Como usar",
+      "engines": {
+        "builtin": {
+          "label": "Agente Integrado (Aion CLI)",
+          "what": "Próprio motor de agentes do AionUi — sem CLI para instalar.",
+          "how": "Cole qualquer API key em Configurações → Agentes e comece a conversar."
+        },
+        "multi": {
+          "label": "Claude / Codex / Gemini +13",
+          "what": "Detecta CLIs locais automaticamente e os unifica numa única interface.",
+          "how": "Instale o CLI (ex.: Claude Code), reabra o AionUi — ele aparece automaticamente."
+        },
+        "remote": {
+          "label": "Remoto / Personalizado (ACP)",
+          "what": "Conecta serviços de agentes externos via protocolo ACP.",
+          "how": "Configurações → Agentes → Adicionar Agente Remoto → informe a URL."
+        }
+      },
+      "assistants": {
+        "docs": {
+          "label": "Documentos (PPT · Word · Excel)",
+          "what": "Cria PPT Morph, Word (.docx) e Excel a partir da sua descrição.",
+          "how": "Selecione o assistente, descreva o que precisa e o arquivo editável é gerado."
+        },
+        "finance": {
+          "label": "Financial Model Creator",
+          "what": "Cria modelos financeiros, projeções e planilhas com fórmulas.",
+          "how": "Descreva seu caso de negócio; o agente cria uma planilha estruturada."
+        },
+        "dashboard": {
+          "label": "Dashboard Creator",
+          "what": "Monta dashboards e visualizações de dados.",
+          "how": "Forneça seus dados ou descreva as métricas; receba um dashboard pronto para usar."
+        },
+        "academic": {
+          "label": "Academic Paper",
+          "what": "Escreve artigos acadêmicos formalmente estruturados (saída: .docx).",
+          "how": "Descreva o tema, metodologia e requisitos; o agente escreve e formata o artigo."
+        },
+        "uiux": {
+          "label": "UI/UX Pro Max",
+          "what": "Design profissional de UI/UX — wireframes, fluxos, especificações.",
+          "how": "Descreva a interface desejada; o agente produz assets e especificações de design."
+        },
+        "social": {
+          "label": "Social Job Publisher",
+          "what": "Transforma pedidos de contratação em vagas e conteúdo para redes sociais.",
+          "how": "Cole a descrição da vaga; o agente a reescreve para o LinkedIn e outras plataformas."
+        },
+        "coach": {
+          "label": "HUMAN 3.0 Coach",
+          "what": "Coaching de desenvolvimento pessoal — metas, hábitos, mentalidade.",
+          "how": "Inicie uma conversa com seu objetivo; o coach guia você passo a passo."
+        },
+        "roleplay": {
+          "label": "Story Roleplay",
+          "what": "Roleplay narrativo imersivo e narrativa interativa.",
+          "how": "Defina o cenário e os personagens; o agente narra e joga junto com você."
+        },
+        "moltbook": {
+          "label": "moltbook",
+          "what": "Rede social para agentes de IA — conecte e compartilhe fluxos de agentes.",
+          "how": "Use pela integração moltbook; requer uma conta moltbook."
+        },
+        "cowork": {
+          "label": "Cowork (Geral)",
+          "what": "Execução autônoma de tarefas multi-etapas — o agente de uso geral.",
+          "how": "Descreva qualquer tarefa; o agente planeja e executa passo a passo no seu PC."
+        }
+      },
+      "tools": {
+        "files": {
+          "label": "Arquivos",
+          "what": "Lê, escreve e edita arquivos diretamente no seu computador.",
+          "how": "O agente pede sua aprovação antes de qualquer alteração em arquivo."
+        },
+        "search": {
+          "label": "Busca Web",
+          "what": "Pesquisa na web por informações atualizadas.",
+          "how": "O agente busca automaticamente quando precisa de dados recentes; você também pode pedir."
+        },
+        "images": {
+          "label": "Geração de Imagens",
+          "what": "Gera imagens usando modelos configurados com suporte a imagens.",
+          "how": "Configurações → Ferramentas → ative a geração de imagens e selecione um modelo."
+        },
+        "mcp": {
+          "label": "MCP / Ferramentas",
+          "what": "Integra ferramentas externas via Model Context Protocol (bancos de dados, APIs, scripts personalizados).",
+          "how": "Configurações → MCP → adicione uma configuração de servidor e a ferramenta fica disponível para todos os agentes."
+        }
+      }
     }
   }
 }
