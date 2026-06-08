@@ -888,7 +888,13 @@
     "step4": "授權成功後，即可透過企業微信與 AI 助手對話",
     "waitingConnection": "請確保 WebUI 已執行，以便企微能存取回調位址",
     "agent": "對話 Agent",
-    "agentDesc": "用於企業微信對話"
+    "agentDesc": "用於企業微信對話",
+    "wsTitle": "企業微信 WebSocket 連線",
+    "wsHint": "使用企業微信智慧型機器人的「長連線（WebSocket）」模式。無需回呼 URL／網域／公網 IP。",
+    "botId": "機器人 ID",
+    "botIdDesc": "來自企業微信智慧型機器人（長連線模式）的機器人 ID",
+    "secret": "密鑰",
+    "secretDesc": "來自企業微信智慧型機器人（長連線模式）的密鑰"
   },
   "extensionAssistantReadonly": "擴展助手為唯讀，你可以複製它並編輯副本。",
   "agentManagement": {
@@ -988,5 +994,8 @@
     "acpTool": "受管 ACP 執行元件",
     "codexAcp": "Codex ACP 執行元件",
     "claudeAgentAcp": "Claude ACP 執行元件"
-  }
+  },
+  "providerIdConflict": "提供商 ID 已存在，請重試。",
+  "extensionSkills": "擴充技能",
+  "extensionSkillsBadge": "擴充"
 }

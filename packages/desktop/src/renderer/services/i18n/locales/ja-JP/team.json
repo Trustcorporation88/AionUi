@@ -43,7 +43,9 @@
     "selectFolder": "フォルダを選択",
     "recentLabel": "最近使用",
     "chooseDifferentFolder": "別のフォルダを選択",
-    "error": "チームの作成に失敗しました"
+    "error": "チームの作成に失敗しました",
+    "searchPlaceholder": "エージェントを検索...",
+    "noSearchResults": "結果が見つかりません"
   },
   "removeAgent": {
     "confirmTitle": "チームメンバーを削除",

@@ -874,7 +874,13 @@
     "step4": "Onaydan sonra WeCom üzerinden AI asistanı ile sohbet edebilirsiniz",
     "waitingConnection": "WeCom'un geri aramaya ulaşabilmesi için WebUI'nin çalıştığından emin olun",
     "agent": "Ajan",
-    "agentDesc": "WeCom sohbetleri için kullanılır"
+    "agentDesc": "WeCom sohbetleri için kullanılır",
+    "wsTitle": "WeCom WebSocket bağlantısı",
+    "wsHint": "WeCom Akıllı Bot \"Uzun Bağlantı (WebSocket)\" modunu kullanın. Geri çağırma URL'si / alan adı / genel IP gerekmez.",
+    "botId": "Bot ID",
+    "botIdDesc": "WeCom Akıllı Bot'tan (Uzun Bağlantı modu) Bot ID",
+    "secret": "Secret",
+    "secretDesc": "WeCom Akıllı Bot'tan (Uzun Bağlantı modu) Secret"
   },
   "extensionAssistantReadonly": "Uzantı asistanları salt okunurdur. Kopyalayıp düzenleyebilirsiniz.",
   "agentManagement": {
@@ -986,5 +992,8 @@
     "acpTool": "the managed ACP tool",
     "codexAcp": "the Codex ACP runtime component",
     "claudeAgentAcp": "the Claude ACP runtime component"
-  }
+  },
+  "providerIdConflict": "Sağlayıcı kimliği zaten mevcut, tekrar deneyin.",
+  "extensionSkills": "Uzantı Becerileri",
+  "extensionSkillsBadge": "Uzantı"
 }
