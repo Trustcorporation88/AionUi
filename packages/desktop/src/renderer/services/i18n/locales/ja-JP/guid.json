@@ -26,5 +26,37 @@
     "statusTesting": "Testing latency...",
     "statusUnreachable": "Unreachable",
     "statusAvailable": "Available"
+  },
+  "agentGuide": {
+    "button": "ガイド",
+    "title": "AionUi でできること",
+    "intro": "あなたと並んで働く AI エージェント——ファイルの読み書き、コード作成、ウェブ閲覧、タスクの自動化を、常にあなたの承認のもとで行います。",
+    "imageAlt": "AionUi のエージェントとアシスタントの概要",
+    "pillars": {
+      "builtinAgent": {
+        "title": "内蔵エージェント",
+        "desc": "インストールしてすぐ使えます——API キーを貼り付けるだけ。"
+      },
+      "multiAgents": {
+        "title": "複数のエージェント",
+        "desc": "Claude、Codex、Gemini など、統一インターフェースで。"
+      },
+      "remoteAccess": {
+        "title": "リモートアクセス",
+        "desc": "WebUI やメッセージアプリからスマホで利用。"
+      },
+      "automation": {
+        "title": "24時間自動化",
+        "desc": "スケジュールされたタスクが自動で実行。"
+      },
+      "assistants": {
+        "title": "プロ向けアシスタント",
+        "desc": "ドキュメント、財務、ダッシュボード、デザインなど。"
+      },
+      "openSource": {
+        "title": "無料・オープンソース",
+        "desc": "クロスプラットフォームで透明——主導権はあなたに。"
+      }
+    }
   }
 }

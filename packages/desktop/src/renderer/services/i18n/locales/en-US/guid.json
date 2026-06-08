@@ -26,5 +26,37 @@
     "statusTesting": "Testing latency...",
     "statusUnreachable": "Unreachable",
     "statusAvailable": "Available"
+  },
+  "agentGuide": {
+    "button": "Guide",
+    "title": "What AionUi does",
+    "intro": "AI agents that work alongside you — reading files, writing code, browsing the web, and automating tasks, always with your approval.",
+    "imageAlt": "Overview of AionUi agents and assistants",
+    "pillars": {
+      "builtinAgent": {
+        "title": "Built-in agent",
+        "desc": "Works the moment you install it — just paste an API key."
+      },
+      "multiAgents": {
+        "title": "Multiple agents",
+        "desc": "Claude, Codex, Gemini and more, in one unified interface."
+      },
+      "remoteAccess": {
+        "title": "Remote access",
+        "desc": "Use it from your phone via WebUI and messaging apps."
+      },
+      "automation": {
+        "title": "24/7 automation",
+        "desc": "Scheduled tasks that run on their own."
+      },
+      "assistants": {
+        "title": "Professional assistants",
+        "desc": "Documents, finance, dashboards, design and more."
+      },
+      "openSource": {
+        "title": "Free & open source",
+        "desc": "Cross-platform and transparent — you stay in control."
+      }
+    }
   }
 }

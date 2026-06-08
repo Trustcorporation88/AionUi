@@ -26,5 +26,37 @@
     "statusTesting": "正在测试延迟...",
     "statusUnreachable": "不可达",
     "statusAvailable": "可用"
+  },
+  "agentGuide": {
+    "button": "指南",
+    "title": "AionUi 能做什么",
+    "intro": "与你协同工作的 AI 智能体——读写文件、编写代码、浏览网页并自动执行任务，且始终需要你的确认。",
+    "imageAlt": "AionUi 智能体与助手总览",
+    "pillars": {
+      "builtinAgent": {
+        "title": "内置智能体",
+        "desc": "安装即用——只需粘贴 API 密钥。"
+      },
+      "multiAgents": {
+        "title": "多智能体",
+        "desc": "Claude、Codex、Gemini 等，统一界面。"
+      },
+      "remoteAccess": {
+        "title": "远程访问",
+        "desc": "通过 WebUI 和即时通讯应用在手机上使用。"
+      },
+      "automation": {
+        "title": "全天候自动化",
+        "desc": "定时任务自动运行。"
+      },
+      "assistants": {
+        "title": "专业助手",
+        "desc": "文档、财务、仪表盘、设计等。"
+      },
+      "openSource": {
+        "title": "免费开源",
+        "desc": "跨平台且透明——一切尽在掌控。"
+      }
+    }
   }
 }

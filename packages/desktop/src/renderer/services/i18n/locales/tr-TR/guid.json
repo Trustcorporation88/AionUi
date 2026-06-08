@@ -26,5 +26,37 @@
     "statusTesting": "Testing latency...",
     "statusUnreachable": "Unreachable",
     "statusAvailable": "Available"
+  },
+  "agentGuide": {
+    "button": "Kılavuz",
+    "title": "AionUi neler yapar",
+    "intro": "Sizin yanınızda çalışan yapay zekâ ajanları — dosyaları okuyup yazar, kod yazar, web'de gezinir ve görevleri otomatikleştirir; her zaman sizin onayınızla.",
+    "imageAlt": "AionUi ajanlarına ve asistanlarına genel bakış",
+    "pillars": {
+      "builtinAgent": {
+        "title": "Yerleşik ajan",
+        "desc": "Kurar kurmaz çalışır — yalnızca bir API anahtarı yapıştırın."
+      },
+      "multiAgents": {
+        "title": "Çoklu ajan",
+        "desc": "Claude, Codex, Gemini ve daha fazlası, tek bir arayüzde."
+      },
+      "remoteAccess": {
+        "title": "Uzaktan erişim",
+        "desc": "WebUI ve mesajlaşma uygulamalarıyla telefonunuzdan kullanın."
+      },
+      "automation": {
+        "title": "7/24 otomasyon",
+        "desc": "Zamanlanmış görevler kendi başına çalışır."
+      },
+      "assistants": {
+        "title": "Profesyonel asistanlar",
+        "desc": "Belgeler, finans, panolar, tasarım ve daha fazlası."
+      },
+      "openSource": {
+        "title": "Ücretsiz ve açık kaynak",
+        "desc": "Çapraz platform ve şeffaf — kontrol sizde."
+      }
+    }
   }
 }
