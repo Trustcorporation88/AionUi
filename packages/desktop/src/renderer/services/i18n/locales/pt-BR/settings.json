@@ -892,7 +892,13 @@
     "step4": "Uma vez aprovado, você pode conversar com o assistente de IA através do WeCom.",
     "waitingConnection": "Certifique-se de que a WebUI esteja sendo executada para que o WeCom possa alcançar a URL de callback.",
     "agent": "Agente",
-    "agentDesc": "Usado para conversas no WeCom"
+    "agentDesc": "Usado para conversas no WeCom",
+    "wsTitle": "Conexão WebSocket do WeCom",
+    "wsHint": "Use o modo \"Conexão Longa (WebSocket)\" do Bot Inteligente do WeCom. Não é necessário URL de callback / domínio / IP público.",
+    "botId": "ID do Bot",
+    "botIdDesc": "ID do Bot do Bot Inteligente do WeCom (modo Conexão Longa)",
+    "secret": "Secret",
+    "secretDesc": "Secret do Bot Inteligente do WeCom (modo Conexão Longa)"
   },
   "extensionAssistantReadonly": "Assistentes de extensão são somente leitura. Você pode duplicá-lo e editar a cópia.",
   "agentManagement": {
@@ -995,5 +1001,8 @@
   },
   "cdP": {
     "title": "CDP (Chrome DevTools Protocol)"
-  }
+  },
+  "providerIdConflict": "O ID do provedor já existe, tente novamente.",
+  "extensionSkills": "Skills de Extensão",
+  "extensionSkillsBadge": "Extensão"
 }

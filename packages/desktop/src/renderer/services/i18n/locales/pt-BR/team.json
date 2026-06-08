@@ -43,7 +43,9 @@
     "selectFolder": "Selecionar pasta",
     "recentLabel": "Recente",
     "chooseDifferentFolder": "Escolher uma pasta diferente",
-    "error": "Falha ao criar equipe"
+    "error": "Falha ao criar equipe",
+    "searchPlaceholder": "Buscar agentes...",
+    "noSearchResults": "Nenhum resultado encontrado"
   },
   "removeAgent": {
     "confirmTitle": "Remover Membro da Equipe",
