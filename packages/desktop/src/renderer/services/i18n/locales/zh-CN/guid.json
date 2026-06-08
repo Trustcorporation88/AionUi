@@ -26,5 +26,136 @@
     "statusTesting": "正在测试延迟...",
     "statusUnreachable": "不可达",
     "statusAvailable": "可用"
+  },
+  "agentGuide": {
+    "button": "指南",
+    "title": "AionUi 能做什么",
+    "intro": "与你协同工作的 AI 智能体——读写文件、编写代码、浏览网页并自动执行任务，且始终需要你的确认。",
+    "imageAlt": "AionUi 智能体与助手总览",
+    "pillars": {
+      "builtinAgent": {
+        "title": "内置智能体",
+        "desc": "安装即用——只需粘贴 API 密钥。"
+      },
+      "multiAgents": {
+        "title": "多智能体",
+        "desc": "Claude、Codex、Gemini 等，统一界面。"
+      },
+      "remoteAccess": {
+        "title": "远程访问",
+        "desc": "通过 WebUI 和即时通讯应用在手机上使用。"
+      },
+      "automation": {
+        "title": "全天候自动化",
+        "desc": "定时任务自动运行。"
+      },
+      "assistants": {
+        "title": "专业助手",
+        "desc": "文档、财务、仪表盘、设计等。"
+      },
+      "openSource": {
+        "title": "免费开源",
+        "desc": "跨平台且透明——一切尽在掌控。"
+      }
+    },
+    "infographic": {
+      "sectionEngines": "AI 智能体引擎",
+      "sectionAssistants": "专业助手",
+      "sectionTools": "智能体工具",
+      "clickHint": "点击任意卡片查看详情",
+      "what": "功能",
+      "how": "使用方法",
+      "engines": {
+        "builtin": {
+          "label": "内置智能体 (Aion CLI)",
+          "what": "AionUi 自带的智能体引擎，无需安装 CLI。",
+          "how": "在设置 → 智能体中粘贴 API 密钥，即可开始对话。"
+        },
+        "multi": {
+          "label": "Claude / Codex / Gemini +13",
+          "what": "自动检测本地 CLI 智能体，统一在一个界面中使用。",
+          "how": "安装所需 CLI（如 Claude Code），重启 AionUi 即可自动识别。"
+        },
+        "remote": {
+          "label": "远程 / 自定义 (ACP)",
+          "what": "通过 ACP 协议连接外部智能体服务。",
+          "how": "设置 → 智能体 → 添加远程智能体 → 输入 URL。"
+        }
+      },
+      "assistants": {
+        "docs": {
+          "label": "文档 (PPT · Word · Excel)",
+          "what": "根据描述生成 Morph PPT、Word (.docx) 和 Excel 文件。",
+          "how": "选择助手，描述需求，即可生成可编辑文件。"
+        },
+        "finance": {
+          "label": "Financial Model Creator",
+          "what": "创建财务模型、预测和公式驱动的电子表格。",
+          "how": "描述你的业务场景，智能体将生成结构化电子表格。"
+        },
+        "dashboard": {
+          "label": "Dashboard Creator",
+          "what": "创建数据仪表板和可视化图表。",
+          "how": "提供数据或描述指标，即可获得可直接使用的仪表板。"
+        },
+        "academic": {
+          "label": "Academic Paper",
+          "what": "撰写正式结构的学术论文（输出：.docx）。",
+          "how": "描述主题、方法论和要求，智能体将撰写并排版论文。"
+        },
+        "uiux": {
+          "label": "UI/UX Pro Max",
+          "what": "专业 UI/UX 设计——线框图、流程、设计规范。",
+          "how": "描述所需界面，智能体生成设计资产和规范。"
+        },
+        "social": {
+          "label": "Social Job Publisher",
+          "what": "将招聘需求转化为精美的职位描述和社交媒体内容。",
+          "how": "粘贴职位描述，智能体将为 LinkedIn 等平台重新撰写。"
+        },
+        "coach": {
+          "label": "HUMAN 3.0 Coach",
+          "what": "个人成长辅导——目标、习惯、思维方式。",
+          "how": "说出你的目标，AI 教练将一步步引导你。"
+        },
+        "roleplay": {
+          "label": "Story Roleplay",
+          "what": "沉浸式叙事角色扮演和互动故事。",
+          "how": "设定场景和角色，智能体陪你一起叙事。"
+        },
+        "moltbook": {
+          "label": "moltbook",
+          "what": "AI 智能体社交网络——连接并分享智能体工作流。",
+          "how": "通过 moltbook 集成使用，需要 moltbook 账号。"
+        },
+        "cowork": {
+          "label": "Cowork（通用）",
+          "what": "自主执行多步骤任务的通用智能体。",
+          "how": "描述任何任务，智能体将在你的电脑上逐步规划并执行。"
+        }
+      },
+      "tools": {
+        "files": {
+          "label": "文件",
+          "what": "直接在你的电脑上读取、写入和编辑文件。",
+          "how": "智能体在更改文件前会请求你的批准。"
+        },
+        "search": {
+          "label": "网页搜索",
+          "what": "搜索网络以获取最新信息。",
+          "how": "智能体在需要最新数据时会自动搜索；你也可以主动要求。"
+        },
+        "images": {
+          "label": "图像生成",
+          "what": "使用已配置的支持图像的模型生成图像。",
+          "how": "设置 → 工具 → 启用图像生成并选择模型。"
+        },
+        "mcp": {
+          "label": "MCP / 工具",
+          "what": "通过模型上下文协议接入外部工具（数据库、API、自定义脚本）。",
+          "how": "设置 → MCP → 添加服务器配置，该工具即可供所有智能体使用。"
+        }
+      }
+    }
   }
 }

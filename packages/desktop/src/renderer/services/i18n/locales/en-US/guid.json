@@ -26,5 +26,136 @@
     "statusTesting": "Testing latency...",
     "statusUnreachable": "Unreachable",
     "statusAvailable": "Available"
+  },
+  "agentGuide": {
+    "button": "Guide",
+    "title": "What AionUi does",
+    "intro": "AI agents that work alongside you — reading files, writing code, browsing the web, and automating tasks, always with your approval.",
+    "imageAlt": "Overview of AionUi agents and assistants",
+    "pillars": {
+      "builtinAgent": {
+        "title": "Built-in agent",
+        "desc": "Works the moment you install it — just paste an API key."
+      },
+      "multiAgents": {
+        "title": "Multiple agents",
+        "desc": "Claude, Codex, Gemini and more, in one unified interface."
+      },
+      "remoteAccess": {
+        "title": "Remote access",
+        "desc": "Use it from your phone via WebUI and messaging apps."
+      },
+      "automation": {
+        "title": "24/7 automation",
+        "desc": "Scheduled tasks that run on their own."
+      },
+      "assistants": {
+        "title": "Professional assistants",
+        "desc": "Documents, finance, dashboards, design and more."
+      },
+      "openSource": {
+        "title": "Free & open source",
+        "desc": "Cross-platform and transparent — you stay in control."
+      }
+    },
+    "infographic": {
+      "sectionEngines": "AI Agent Engines",
+      "sectionAssistants": "Professional Assistants",
+      "sectionTools": "Agent Tools",
+      "clickHint": "Click any card for details",
+      "what": "What it does",
+      "how": "How to use",
+      "engines": {
+        "builtin": {
+          "label": "Built-in Agent (Aion CLI)",
+          "what": "AionUi's own agent engine — no CLI to install.",
+          "how": "Paste any API key in Settings → Agents and start chatting."
+        },
+        "multi": {
+          "label": "Claude / Codex / Gemini +13",
+          "what": "Auto-detects local CLI agents and unifies them in one interface.",
+          "how": "Install the CLI (e.g. Claude Code), reopen AionUi — it appears automatically."
+        },
+        "remote": {
+          "label": "Remote / Custom (ACP)",
+          "what": "Connects external agent services via the ACP protocol.",
+          "how": "Settings → Agents → Add Remote Agent → enter the URL."
+        }
+      },
+      "assistants": {
+        "docs": {
+          "label": "Documents (PPT · Word · Excel)",
+          "what": "Creates Morph PPT, Word (.docx) and Excel files from your description.",
+          "how": "Select the assistant, describe what you need, and the editable file is generated."
+        },
+        "finance": {
+          "label": "Financial Model Creator",
+          "what": "Builds financial models, projections and formula-driven spreadsheets.",
+          "how": "Describe your business case; the agent creates a structured spreadsheet."
+        },
+        "dashboard": {
+          "label": "Dashboard Creator",
+          "what": "Assembles data dashboards and visualizations.",
+          "how": "Provide your data or describe the metrics; receive a ready-to-use dashboard."
+        },
+        "academic": {
+          "label": "Academic Paper",
+          "what": "Writes formally structured academic papers (output: .docx).",
+          "how": "Describe your topic, methodology and requirements; the agent writes and formats the paper."
+        },
+        "uiux": {
+          "label": "UI/UX Pro Max",
+          "what": "Professional UI/UX design — wireframes, flows, design specs.",
+          "how": "Describe the interface you want; the agent produces design assets and specs."
+        },
+        "social": {
+          "label": "Social Job Publisher",
+          "what": "Turns hiring requests into polished job posts and social content.",
+          "how": "Paste the job description; the agent rewrites it for LinkedIn and other platforms."
+        },
+        "coach": {
+          "label": "HUMAN 3.0 Coach",
+          "what": "Personal development coaching — goals, habits, mindset.",
+          "how": "Start a conversation with your goal; the coach guides you step by step."
+        },
+        "roleplay": {
+          "label": "Story Roleplay",
+          "what": "Immersive narrative roleplay and interactive storytelling.",
+          "how": "Set the scene and characters; the agent narrates and plays alongside you."
+        },
+        "moltbook": {
+          "label": "moltbook",
+          "what": "A social network for AI agents — connect and share agent workflows.",
+          "how": "Use through the moltbook integration; requires a moltbook account."
+        },
+        "cowork": {
+          "label": "Cowork (General)",
+          "what": "Autonomous multi-step task execution — the general-purpose agent.",
+          "how": "Describe any task; the agent plans and executes it step by step on your PC."
+        }
+      },
+      "tools": {
+        "files": {
+          "label": "Files",
+          "what": "Reads, writes and edits files directly on your computer.",
+          "how": "The agent asks for your approval before any file change."
+        },
+        "search": {
+          "label": "Web Search",
+          "what": "Searches the web for up-to-date information.",
+          "how": "The agent automatically searches when it needs current data; you can also ask it to search."
+        },
+        "images": {
+          "label": "Image Generation",
+          "what": "Generates images using configured image-capable models.",
+          "how": "Settings → Tools → enable image generation and select a model."
+        },
+        "mcp": {
+          "label": "MCP / Tools",
+          "what": "Plugs in external tools via the Model Context Protocol (databases, APIs, custom scripts).",
+          "how": "Settings → MCP → add a server configuration and the tool becomes available to all agents."
+        }
+      }
+    }
   }
 }
