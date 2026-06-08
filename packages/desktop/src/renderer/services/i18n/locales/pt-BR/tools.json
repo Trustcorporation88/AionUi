@@ -3,14 +3,14 @@
   "newFile": "Novo Arquivo",
   "deletedFile": "Arquivo Excluído",
   "modified": "Modificado",
-  "fileChanges": "Alterações",
+  "fileChanges": "Alterações de Arquivo",
   "shell": {
     "displayName": "Comando Shell",
     "description": "Executar comandos shell"
   },
   "fileOps": {
     "displayName": "Operações de Arquivo",
-    "description": "Leitura, escrita e modificação de arquivos"
+    "description": "Leitura, escrita e modificação de arquivo"
   },
   "webSearch": {
     "displayName": "Busca na Web",
@@ -36,29 +36,29 @@
   "titles": {
     "web_search_started": "Busca na Web Iniciada",
     "web_search_completed": "Busca na Web Concluída",
-    "web_search": "Busca Web",
+    "web_search": "Busca na Web",
     "applying_patch": "Aplicando Patch",
     "patch_applied": "Patch Aplicado",
     "file_patch": "Patch de Arquivo",
     "mcp_tool_starting": "Ferramenta MCP: {{toolName}} (iniciando)",
-    "mcp_tool": "MCP: {{toolName}}",
+    "mcp_tool": "Ferramenta MCP: {{toolName}}",
     "execute_command": "Executar: {{command}}",
     "command_output": "Saída do Comando",
     "command_completed": "Comando Concluído",
     "shell_command": "Comando Shell"
   },
   "labels": {
-    "search_query": "Busca:",
-    "file_changes": "Alterações:",
-    "tool_details": "Detalhes:",
+    "search_query": "Consulta de Busca:",
+    "file_changes": "Alterações de Arquivo:",
+    "tool_details": "Detalhes da Ferramenta:",
     "tool": "Ferramenta",
     "arguments": "Argumentos:",
     "result": "Resultado:",
     "command": "Comando:",
-    "working_directory": "Diretório:",
+    "working_directory": "Diretório de trabalho:",
     "exit_code": "Saída: {{code}}",
     "duration": "Duração: {{seconds}}",
-    "auto_approved": "Auto-aprovado",
+    "auto_approved": "Aprovado automaticamente",
     "manual_approval": "Aprovação manual"
   },
   "actions": {

@@ -61,6 +61,7 @@ import type {
   UpdateDownloadRequest,
   UpdateDownloadResult,
 } from '../update/updateTypes';
+import type { Theme } from '@/common/theme/types';
 import type { ProtocolDetectionRequest, ProtocolDetectionResponse } from '../utils/protocolDetector';
 import { fromApiConversation, fromApiPaginatedConversations, toApiModelOptional } from './apiModelMapper';
 import {
@@ -229,6 +230,15 @@ export const conversation = {
     (p) => ({ status: p.status })
   ),
   responseStream: wsEmitter<IResponseMessage>('message.stream'),
+  userCreated: wsEmitter<{
+    conversation_id: string;
+    msg_id: string;
+    content: string;
+    position: 'right';
+    status: 'finish';
+    hidden: boolean;
+    created_at: number;
+  }>('message.userCreated'),
   artifactStream: wsEmitter<IConversationArtifact>('conversation.artifact'),
   turnCompleted: wsMappedEmitter<IConversationTurnCompletedEvent>('turn.completed', (raw) => {
     const r = raw as Record<string, unknown>;
@@ -351,6 +361,8 @@ export type RuntimeFailureKind =
   | 'checksum_mismatch'
   | 'validation_failed'
   | 'unsupported_platform'
+  | 'bundled_resource_missing'
+  | 'bundled_resource_invalid'
   | 'unknown';
 
 export interface IRuntimeStatusScope {
@@ -788,7 +800,7 @@ export const acpConversation = {
   checkProviderHealth: httpPost<ProviderHealthCheckResponse, ProviderHealthCheckRequest>(
     '/api/agents/provider-health-check'
   ),
-  setMode: httpPut<void, { conversation_id: string; mode: string }>(
+  setMode: httpPut<{ mode: string; initialized: boolean }, { conversation_id: string; mode: string }>(
     (p) => `/api/conversations/${p.conversation_id}/mode`,
     (p) => ({ mode: p.mode })
   ),
@@ -805,7 +817,7 @@ export const acpConversation = {
     (p) => `/api/conversations/${p.conversation_id}/model`,
     { silentStatuses: [404] }
   ),
-  setModel: httpPut<void, { conversation_id: string; model_id: string }>(
+  setModel: httpPut<{ model_info: AcpModelInfo | null }, { conversation_id: string; model_id: string }>(
     (p) => `/api/conversations/${p.conversation_id}/model`,
     (p) => ({ model_id: p.model_id })
   ),
@@ -1080,6 +1092,19 @@ export const windowControls = {
   close: bridge.buildProvider<void, void>('window-controls:close'),
   isMaximized: bridge.buildProvider<boolean, void>('window-controls:is-maximized'),
   maximizedChanged: bridge.buildEmitter<{ is_maximized: boolean }>('window-controls:maximized-changed'),
+};
+
+// ---------------------------------------------------------------------------
+// Theme — stays IPC (main process owns the resolved-theme cache)
+// ---------------------------------------------------------------------------
+
+export const theme = {
+  // main → all renderers: the resolved active theme changed
+  changed: bridge.buildEmitter<Theme>('theme:changed'),
+  // renderer → main: publish a newly resolved theme (main caches + re-emits `changed`)
+  setActive: bridge.buildProvider<void, Theme>('theme:set-active'),
+  // any window → main: pull the currently cached resolved theme on load (null if none yet)
+  requestCurrent: bridge.buildProvider<Theme | null, void>('theme:request-current'),
 };
 
 // ---------------------------------------------------------------------------

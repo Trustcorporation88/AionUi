@@ -1,8 +1,8 @@
 {
   "auth": {
-    "failed": "Falha na autenticação {{backend}}:\n\n{{error}}\n\nVerifique o status de autenticação da sua ferramenta CLI local",
+    "failed": "A autenticação de {{backend}} falhou:\n\n{{error}}\n\nPor favor, verifique o status de autenticação da sua ferramenta CLI local",
     "console_error": "Detalhes do erro de autenticação ACP:",
-    "failed_confirm": "Falha na autenticação ACP {{backend}}:\n\n{{error}}\n\nDeseja ir para a página de configurações agora?"
+    "failed_confirm": "A autenticação de {{backend}} via ACP falhou:\n\n{{error}}\n\nDeseja ir para a página de configurações para configurar agora?"
   },
   "send": {
     "failed": "Falha ao enviar mensagem: {{error}}"
