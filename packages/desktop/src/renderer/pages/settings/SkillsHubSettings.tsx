@@ -5,6 +5,7 @@ import React, { useCallback, useEffect, useRef, useState, useMemo } from 'react'
 import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 import SettingsPageWrapper from './components/SettingsPageWrapper';
+import { getLocalizedSkillDescription } from '@/renderer/services/i18n/utils/skillDescriptions';
 
 // Skill 信息类型 / Skill info type
 interface SkillInfo {
@@ -49,7 +50,7 @@ interface SkillsHubSettingsProps {
 }
 
 const SkillsHubSettings: React.FC<SkillsHubSettingsProps> = ({ withWrapper = true }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   const highlightName = searchParams.get('highlight');
   const [highlightedSkill, setHighlightedSkill] = useState<string | null>(null);
@@ -60,6 +61,9 @@ const SkillsHubSettings: React.FC<SkillsHubSettingsProps> = ({ withWrapper = tru
   const [search_query, setSearchQuery] = useState('');
   const [builtinAutoSkills, setBuiltinAutoSkills] = useState<Array<{ name: string; description: string }>>([]);
 
+  const getLocalizedDescription = useCallback((skillName: string, description: string) => {
+    return getLocalizedSkillDescription(skillName, i18n.language, description);
+  }, [i18n.language]);
   const mySkills = useMemo(() => availableSkills.filter((s) => s.source !== 'extension'), [availableSkills]);
   const extensionSkills = useMemo(() => availableSkills.filter((s) => s.source === 'extension'), [availableSkills]);
 
@@ -263,12 +267,12 @@ const SkillsHubSettings: React.FC<SkillsHubSettingsProps> = ({ withWrapper = tru
                         </span>
                       )}
                     </div>
-                    {skill.description && (
+                    {getLocalizedDescription(skill.name, skill.description) && (
                       <p
                         className='text-13px text-t-secondary leading-relaxed line-clamp-2 m-0'
-                        title={skill.description}
+                        title={getLocalizedDescription(skill.name, skill.description)}
                       >
-                        {skill.description}
+                        {getLocalizedDescription(skill.name, skill.description)}
                       </p>
                     )}
                   </div>
@@ -347,8 +351,8 @@ const SkillsHubSettings: React.FC<SkillsHubSettingsProps> = ({ withWrapper = tru
                         {t('settings.extensionSkillsBadge', { defaultValue: 'Extension' })}
                       </span>
                     </div>
-                    {skill.description && (
-                      <p className='text-13px text-t-secondary leading-relaxed line-clamp-2 m-0'>{skill.description}</p>
+                    {getLocalizedDescription(skill.name, skill.description) && (
+                      <p className='text-13px text-t-secondary leading-relaxed line-clamp-2 m-0'>{getLocalizedDescription(skill.name, skill.description)}</p>
                     )}
                   </div>
                 </div>
@@ -393,8 +397,8 @@ const SkillsHubSettings: React.FC<SkillsHubSettingsProps> = ({ withWrapper = tru
                         {t('settings.autoInjectedSkillsBadge')}
                       </span>
                     </div>
-                    {skill.description && (
-                      <p className='text-13px text-t-secondary leading-relaxed line-clamp-2 m-0'>{skill.description}</p>
+                    {getLocalizedDescription(skill.name, skill.description) && (
+                      <p className='text-13px text-t-secondary leading-relaxed line-clamp-2 m-0'>{getLocalizedDescription(skill.name, skill.description)}</p>
                     )}
                   </div>
                 </div>
