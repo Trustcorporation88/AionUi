@@ -48,7 +48,7 @@ jobs:
         id: set-matrix
         shell: bash
         run: |
-          PLATFORM="${{ inputs.platform }}"
+          PLATFORM="${{ inputs.platform || 'all' }}"
 
           MACOS_ARM64='{"platform":"macos-arm64","os":"macos-14","command":"node scripts/build-with-builder.js arm64 --mac --arm64","artifact-name":"macos-build-arm64","arch":"arm64"}'
           MACOS_X64='{"platform":"macos-x64","os":"macos-14","command":"node scripts/build-with-builder.js x64 --mac --x64","artifact-name":"macos-build-x64","arch":"x64"}'
