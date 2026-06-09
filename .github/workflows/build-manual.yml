@@ -82,8 +82,8 @@ jobs:
     uses: ./.github/workflows/_build-reusable.yml
     with:
       matrix: ${{ needs.prepare-matrix.outputs.matrix }}
-      ref: ${{ inputs.branch }}
-      skip_code_quality: ${{ inputs.skip_code_quality }}
+      ref: ${{ inputs.branch || 'main' }}
+      skip_code_quality: ${{ inputs.skip_code_quality || false }}
       append_commit_hash: true
       upload_installers_only: true
     secrets: inherit
