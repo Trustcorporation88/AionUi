@@ -1,19 +1,19 @@
 {
-  "plan": "Modo Planejamento",
+  "plan": "Modo de Planejamento",
   "default": "Padrão",
   "acceptEdits": "Aceitar Edições",
   "autoEdit": "Edição Automática",
   "auto_edit": "Edição Automática",
   "yolo": "YOLO",
-  "yoloNoSandbox": "Totalmente Automático (Sem Sandbox)",
+  "yoloNoSandbox": "Automático Completo (Sem Sandbox)",
   "auto": "Automático",
   "dontAsk": "Não Perguntar",
   "bypass": "Ignorar (YOLO)",
   "bypassPermissions": "YOLO",
   "smart": "Inteligente",
-  "build": "Modo Construção",
+  "build": "Modo de Construção",
   "permission": "Permissão",
   "switchMode": "Modo de Permissão",
-  "switchSuccess": "Modo alterado com sucesso",
-  "switchFailed": "Falha ao alterar o modo"
+  "switchSuccess": "Modo alternado com sucesso",
+  "switchFailed": "Falha ao alternar modo"
 }

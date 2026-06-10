@@ -43,7 +43,9 @@
     "selectFolder": "Выбрать папку",
     "recentLabel": "Недавние",
     "chooseDifferentFolder": "Выбрать другую папку",
-    "error": "Не удалось создать команду"
+    "error": "Не удалось создать команду",
+    "searchPlaceholder": "Поиск агентов...",
+    "noSearchResults": "Ничего не найдено"
   },
   "removeAgent": {
     "confirmTitle": "Удалить участника команды",
