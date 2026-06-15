@@ -876,7 +876,13 @@
     "step4": "承認後、WeCom から AI アシスタントとチャットできます",
     "waitingConnection": "WeCom がコールバックに到達できるよう WebUI を実行してください",
     "agent": "エージェント",
-    "agentDesc": "WeCom の会話に使用"
+    "agentDesc": "WeCom の会話に使用",
+    "wsTitle": "WeCom WebSocket 接続",
+    "wsHint": "WeCom インテリジェントボットの「ロングコネクション（WebSocket）」モードを使用します。コールバック URL／ドメイン／グローバル IP は不要です。",
+    "botId": "ボット ID",
+    "botIdDesc": "WeCom インテリジェントボット（ロングコネクションモード）のボット ID",
+    "secret": "シークレット",
+    "secretDesc": "WeCom インテリジェントボット（ロングコネクションモード）のシークレット"
   },
   "extensionAssistantReadonly": "拡張アシスタントは読み取り専用です。複製して編集することができます。",
   "agentManagement": {
@@ -988,5 +994,8 @@
     "acpTool": "the managed ACP tool",
     "codexAcp": "the Codex ACP runtime component",
     "claudeAgentAcp": "the Claude ACP runtime component"
-  }
+  },
+  "providerIdConflict": "プロバイダー ID は既に存在します。再試行してください。",
+  "extensionSkills": "拡張スキル",
+  "extensionSkillsBadge": "拡張"
 }

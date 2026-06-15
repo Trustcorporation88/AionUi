@@ -886,7 +886,13 @@
     "step4": "授权成功后，即可通过企业微信与 AI 助手对话",
     "waitingConnection": "请确保 WebUI 已运行，以便企微能访问回调地址",
     "agent": "对话 Agent",
-    "agentDesc": "用于企业微信对话"
+    "agentDesc": "用于企业微信对话",
+    "wsTitle": "企业微信 WebSocket 连接",
+    "wsHint": "使用企业微信智能机器人的「长连接（WebSocket）」模式。无需回调 URL／域名／公网 IP。",
+    "botId": "机器人 ID",
+    "botIdDesc": "来自企业微信智能机器人（长连接模式）的机器人 ID",
+    "secret": "密钥",
+    "secretDesc": "来自企业微信智能机器人（长连接模式）的密钥"
   },
   "addAssistant": "添加助手",
   "extensionAssistantReadonly": "扩展助手为只读，你可以复制它并编辑副本。",
@@ -987,5 +993,8 @@
     "conversation": "对话",
     "mcp": "MCP",
     "customAgent": "自定义 Agent"
-  }
+  },
+  "providerIdConflict": "提供商 ID 已存在，请重试。",
+  "extensionSkills": "扩展技能",
+  "extensionSkillsBadge": "扩展"
 }
